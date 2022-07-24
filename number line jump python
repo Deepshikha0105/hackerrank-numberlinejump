@@ -1,0 +1,15 @@
+def kangaroo(x1, v1, x2, v2):
+    l=[x1,v1,x2,v2]
+    m=max(l)
+    i=0
+    
+    if x1<x2 and v1<2:
+        return 'NO'
+    else:
+        for i in range(m+1):
+            if (x1+(v1*i)==x2+(v2*i)):
+                
+                return "YES"
+            
+        return "NO"
+            
